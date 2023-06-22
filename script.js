@@ -1,12 +1,12 @@
 // 1. Перепишите код с использованием тернарного оператора
 
-let country = 'Sweden';
-let access;
-if (country == 'Sweden') {
-access = true;
-} else{
-access = false;
-}
+// let country = 'Sweden';
+// let access;
+// if (country == 'Sweden') {
+// access = true;
+// } else{
+// access = false;
+// }
 
 
 // let country = "Sweden";
@@ -17,8 +17,10 @@ access = false;
 
 // let n = 10;
 // for(let i = 0; i < 10; i++){
-// 	console.log(n + 1);
+// 	n = n + 1;
 // }
+// console.log(n)
+
 
 // 3. Увеличивая счетчик цикла на 2, нужно 5 раз выполнить след. действия:
 
@@ -71,20 +73,24 @@ access = false;
 
 // function getSquare (min, max){
 // 	for(let i = min; i <= max; i++){
-// 		console.log(square = i * i);
+// 		console.log(i * i);
 // 	}
-// 	return square;
 // }
 
-// console.log(getSquare(2, 5));
+// (getSquare(0, 6));
 
 // 8. Написать функцию, котрая возвращает строку - случайный цвет в формате rgb. Это будет строка вида "rgb(10,55,250)"
 
-// function getRandomInteger(min, max) {
-// 	return Math.floor(Math.random() * (max - min)) + min;
-// 	}
+function getRandomInteger(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+	}
+	
 
-// 	getRandomInteger(0, 255);
+function getRandomRGB () {
+		return `rgb(${getRandomInteger(0, 255)}, ${getRandomInteger(0, 255)}, ${getRandomInteger(0, 255)})`;
+	}
+	
+	console.log(getRandomRGB());
 
 // 	function getRandomRGB(optionsOne, optionsTwo, optionsThree){
 // 		return `rgb( ${optionsOne}, ${optionsTwo}, ${optionsThree})`;
